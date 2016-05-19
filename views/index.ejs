@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+
+    <base href="/"/> <!-- for Angular html5Mode -->
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimal-ui" />
+    
+    
+  </head>
+  <body ng-app="app" ng-controller="appCtrl" ng-cloak >
+    <% include includes/head.ejs %>
+  	<div class="container ">
+  		<div class="jumbotron">
+	  		<h1><%= title %></h1>
+		    <p>Welcome to <%= title %></p>		
+  		</div>
+  		
+  	</div>
+  	<div class="container-fluid" ng-view>
+	  	
+
+  	</div>
+    
+  </body>
+
+  <% include includes/func.ejs %>
+  <script src="javascript/index.js"></script>
+
+  <script src="javascript/home/homeCtrl.js"></script>
+
+
+</html>
